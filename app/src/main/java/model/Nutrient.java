@@ -6,7 +6,7 @@ package model;
 public class Nutrient {
     /* DATA MEMBERS */
     private String nutrient_id;			// The nutrient ID!
-    private String name;			// The name of the nutrient
+    private String name;			    // The name of the nutrient
     private String unit;				// The units of measure
     private double value;				// How much we have! (might want accessor that can return value as double?
     private double gm;					// The value represented as it's 100 gram equivalent

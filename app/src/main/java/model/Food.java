@@ -174,14 +174,4 @@ public class Food implements Comparable {
         return cloneFood;
     }
 
-
-
-
-// I think the main model item, "food", should be represented as what comes back from the food report
-    // That is, it has an array of nutrients
-    // However, I don't think that the nutrients should contain their servings and junk
-    // We should keep track of that here, in some kind of 2D arraylist data structure
-    // A List, of lists of "Measures"
-    // Each List belongs to nutrient[i] in our array of nutrients
-    //		This would be constructed upon being fed a list of nutrients, depending on the construction
 }

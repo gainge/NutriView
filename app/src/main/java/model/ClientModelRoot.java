@@ -62,7 +62,6 @@ public class ClientModelRoot extends Observable {
     // We should also have some constant stuff for reference
     //      Like the list of food groups, the reference foods
     //      As well as the image asset ids for all of these things
-
     public ClientModelRoot() {
         // Default Constructor
         this.searchResults = new ArrayList<>();
@@ -115,8 +114,6 @@ public class ClientModelRoot extends Observable {
 
             FileInputStream fis = context.openFileInput("favorites.json");
             InputStreamReader isr = new InputStreamReader(fis);
-
-//            Reader reader = new InputStreamReader(context.getAssets().open(path));
             Reader reader = isr;
 
             mFavoriteFoods = gson.fromJson(reader, new TypeToken<ArrayList<Food>>() {}.getType());
@@ -249,9 +246,6 @@ public class ClientModelRoot extends Observable {
         else {
             // Just add it normally
             mFavoriteFoods.add(newFav);
-            // Notify a food detail fragment what's up
-//            setChanged();
-//            notifyObservers(newFav);
         }
     }
 
@@ -283,16 +277,11 @@ public class ClientModelRoot extends Observable {
 
         // Otherwise update the food and notify the observer fragment
         updateFavoriteAtIndex(index, updatedFav);
-//        setChanged();
-//        notifyObservers(updatedFav);
     }
 
     public void updateFavoriteFood(Food updatedFav) {
         // Add favorite food does updating as well, if it's already contained
         addFavoriteFood(updatedFav);
-        // Notify a food detail fragment what's up
-//        setChanged();
-//        notifyObservers(updatedFav);
     }
 
     public boolean containsFavorite(Food food) {
@@ -398,7 +387,6 @@ public class ClientModelRoot extends Observable {
                 file.createNewFile();
             }
 
-//            FileOutputStream fileOutputStream = context.openFileOutput(path, Context.MODE_PRIVATE);
             FileOutputStream fileOutputStream = new FileOutputStream(file);
             Writer writer = new OutputStreamWriter(fileOutputStream);
 
@@ -414,32 +402,6 @@ public class ClientModelRoot extends Observable {
             Log.d(TAG, "Generic IO Exception!");
         }
 
-
-
-
-
-//        try {
-//            context.getAssets().
-//            Writer writer = new OutputStreamWriter(context.getAssets().open(path));
-//            gson.toJson(mFavoriteFoods, writer);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//
-//
-//        }
-//
-//
-//        // Write gson to a file
-//        try (Writer writer = new FileWriter("Output.json")) {
-//            gson.toJson(users, writer);
-//        }
     }
 
-
-
-
-
-
-    // We should have lots of cool methods here for accessing global data in the application
-    //      For example, getting food group names from IDs, and getting IDs from names.
 }
