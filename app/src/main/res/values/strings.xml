@@ -47,8 +47,6 @@
         <item>carbs.json</item>
     </string-array>
 
-    <string name="api_key_path">api.txt</string>
-
     <string name="temp_gridview_src_path">DrMarioBlack.png</string>
 
     <!-- TODO: Remove or change this placeholder text -->

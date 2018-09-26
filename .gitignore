@@ -13,7 +13,7 @@
 /*/build/
 
 # Keeping our API key safe
-app/src/main/assets/api.txt
+app/src/main/res/values/api.xml
 
 # OS Specific Stuff
 .DS_Store

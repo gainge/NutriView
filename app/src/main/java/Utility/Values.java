@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class Values {
 
-    public static Values SINGLETON = new Values();
+    public static final Values SINGLETON = new Values();
 
     private Values() {
         // Default singleton constructor
@@ -22,23 +22,7 @@ public class Values {
 
     /* Instance Methods */
     public void loadAPIKey(Context context) {
-        String path = context.getResources().getString(R.string.api_key_path);
-
-        File inFile = new File(path);
-
-        if (!inFile.exists()) {
-            API_KEY = "CONFIGURED FILE DOES NOT EXIST!";
-            return;
-        }
-
-        // We should be good?
-        try {
-            Scanner sc = new Scanner(inFile);
-            API_KEY = sc.nextLine();    // Read in the API Key
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
+        API_KEY = context.getResources().getString(R.string.api_key);
     }
 
     /* CONSTANTS */
