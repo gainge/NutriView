@@ -5,8 +5,9 @@ An android app to help people visualize nutritional information in foods.  It us
 
 <div style="display: inline-block">
   <img src="https://i.imgur.com/S7nIlyv.png" width="100">
-  <img src="https://i.imgur.com/S7nIlyv.png" width="100">
-  <img src="https://i.imgur.com/S7nIlyv.png" width="100">
-  <img src="https://i.imgur.com/S7nIlyv.png" width="100">
+  <img src="https://i.imgur.com/FwHTFVZ.png" width="100">
+  <img src="https://i.imgur.com/6H96FTt.png" width="100">
+  <img src="https://i.imgur.com/77L4CRt.png" width="100">
+  <img src="https://i.imgur.com/3AKoEud.png" width="100">
 </div>
 
