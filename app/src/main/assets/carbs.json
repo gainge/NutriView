@@ -1,0 +1,38 @@
+[
+  {"name":"White Bread","ID":"18069","foodGroupName":"","foodGroupID":"","weight":29.0,"measure":"1.0 slice","nutrients":
+    [
+      {"nutrient_id":"208","name":"Energy","unit":"kcal","value":77.0,"gm":266.0},
+      {"nutrient_id":"269","name":"Sugars, total","unit":"g","value":1.64,"gm":5.67},
+      {"nutrient_id":"203","name":"Protein","unit":"g","value":2.57,"gm":8.85},
+      {"nutrient_id":"204","name":"Total lipid (fat)","unit":"g","value":0.97,"gm":3.33},
+      {"nutrient_id":"205","name":"Carbohydrate, by difference","unit":"g","value":14.33,"gm":49.42}
+    ]
+  },
+  {"name":"Spaghetti with Sauce)","ID":"36046","foodGroupName":"","foodGroupID":"","weight":510.0,"measure":"1.0 serving","nutrients":
+    [
+      {"nutrient_id":"208","name":"Energy","unit":"kcal","value":530.0,"gm":104.0},
+      {"nutrient_id":"269","name":"Sugars, total","unit":"g","value":9.28,"gm":1.82},
+      {"nutrient_id":"203","name":"Protein","unit":"g","value":19.89,"gm":3.9},
+      {"nutrient_id":"204","name":"Total lipid (fat)","unit":"g","value":9.64,"gm":1.89},
+      {"nutrient_id":"205","name":"Carbohydrate, by difference","unit":"g","value":90.63,"gm":17.77}
+    ]
+  },
+  {"name":"Fried Rice","ID":"36602","foodGroupName":"","foodGroupID":"","weight":137.0,"measure":"1.0 cup","nutrients":
+    [
+      {"nutrient_id":"208","name":"Energy","unit":"kcal","value":238.0,"gm":174.0},
+      {"nutrient_id":"269","name":"Sugars, total","unit":"g","value":0.77,"gm":0.56},
+      {"nutrient_id":"203","name":"Protein","unit":"g","value":5.55,"gm":4.05},
+      {"nutrient_id":"204","name":"Total lipid (fat)","unit":"g","value":4.06,"gm":2.96},
+      {"nutrient_id":"205","name":"Carbohydrate, by difference","unit":"g","value":44.92,"gm":32.79}
+    ]
+  },
+  {"name":"QUAKER Instant Oatmeal, Regular","ID":"08640","foodGroupName":"","foodGroupID":"","weight":41.0,"measure":"1.0 packet","nutrients":
+    [
+      {"nutrient_id":"208","name":"Energy","unit":"kcal","value":150.0,"gm":367.0},
+      {"nutrient_id":"269","name":"Sugars, total","unit":"g","value":0.41,"gm":1.0},
+      {"nutrient_id":"203","name":"Protein","unit":"g","value":6.56,"gm":16.0},
+      {"nutrient_id":"204","name":"Total lipid (fat)","unit":"g","value":2.58,"gm":6.3},
+      {"nutrient_id":"205","name":"Carbohydrate, by difference","unit":"g","value":27.47,"gm":67.0}
+    ]
+  }
+]

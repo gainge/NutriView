@@ -1,0 +1,38 @@
+[
+  {"name":"Apple","ID":"09003","foodGroupName":"","foodGroupID":"","weight":125.0,"measure":"1.0 ","nutrients":
+    [
+      {"nutrient_id":"208","name":"Energy","unit":"kcal","value":126.0,"gm":52.0},
+      {"nutrient_id":"269","name":"Sugars, total","unit":"g","value":25.14,"gm":10.39},
+      {"nutrient_id":"203","name":"Protein","unit":"g","value":0.63,"gm":0.26},
+      {"nutrient_id":"204","name":"Total lipid (fat)","unit":"g","value":0.41,"gm":0.17},
+      {"nutrient_id":"205","name":"Carbohydrate, by difference","unit":"g","value":33.42,"gm":13.81}
+    ]
+  },
+  {"name":"McDONALD\u0027S, Double Cheeseburger","ID":"21344","foodGroupName":"","foodGroupID":"","weight":155.0,"measure":"1.0 ","nutrients":
+    [
+      {"nutrient_id":"208","name":"Energy","unit":"kcal","value":437.0,"gm":282.0},
+      {"nutrient_id":"269","name":"Sugars, total","unit":"g","value":6.56,"gm":4.23},
+      {"nutrient_id":"203","name":"Protein","unit":"g","value":24.02,"gm":15.5},
+      {"nutrient_id":"204","name":"Total lipid (fat)","unit":"g","value":24.94,"gm":16.09},
+      {"nutrient_id":"205","name":"Carbohydrate, by difference","unit":"g","value":29.12,"gm":18.79}
+    ]
+  },
+  {"name":"Vanilla Ice Cream","ID":"19095","foodGroupName":"","foodGroupID":"","weight":66.0,"measure":"1/2 cup","nutrients":
+    [
+      {"nutrient_id":"208","name":"Energy","unit":"kcal","value":137.0,"gm":207.0},
+      {"nutrient_id":"269","name":"Sugars, total","unit":"g","value":14.01,"gm":21.22},
+      {"nutrient_id":"203","name":"Protein","unit":"g","value":2.31,"gm":3.5},
+      {"nutrient_id":"204","name":"Total lipid (fat)","unit":"g","value":7.26,"gm":11.0},
+      {"nutrient_id":"205","name":"Carbohydrate, by difference","unit":"g","value":15.58,"gm":23.6}
+    ]
+  },
+  {"name":"Raw Broccoli","ID":"11090","foodGroupName":"","foodGroupID":"","weight":91.0,"measure":"1.0 cup chopped","nutrients":
+    [
+      {"nutrient_id":"208","name":"Energy","unit":"kcal","value":31.0,"gm":34.0},
+      {"nutrient_id":"269","name":"Sugars, total","unit":"g","value":1.55,"gm":1.7},
+      {"nutrient_id":"203","name":"Protein","unit":"g","value":2.57,"gm":2.82},
+      {"nutrient_id":"204","name":"Total lipid (fat)","unit":"g","value":0.34,"gm":0.37},
+      {"nutrient_id":"205","name":"Carbohydrate, by difference","unit":"g","value":6.04,"gm":6.64}
+    ]
+  }
+]

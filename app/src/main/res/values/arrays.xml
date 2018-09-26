@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="food_group_icon_files">
+        <!--<item>baby_foods.png</item>-->
+        <item>baked_products.png</item>
+        <item>beef_products.png</item>
+        <item>beverages.png</item>
+        <item>breakfast_cereals.png</item>
+        <item>cereal_grains_and_pasta.png</item>
+        <item>dairy_and_egg_products.png</item>
+        <item>fast_foods.png</item>
+        <item>fats_and_oils.png</item>
+        <item>finfish_and_shellfish_products.png</item>
+        <item>fruits_and_fruit_juices.png</item>
+        <item>lamb_veal_and_game_products.png</item>
+        <item>legumes_and_legume_products.png</item>
+        <item>meals_entrees_and_side_dishes.png</item>
+        <item>nut_and_seed_products.png</item>
+        <item>pork_products.png</item>
+        <item>poultry_products.png</item>
+        <item>restaurant_foods.png</item>
+        <item>sausages_and_luncheon_meats.png</item>
+        <item>snacks.png</item>
+        <item>soups_sauces_and_gravies.png</item>
+        <item>spices_and_herbs.png</item>
+        <item>sweets.png</item>
+        <item>vegetables_and_vegetable_products.png</item>
+    </string-array>
+
+    <string-array name="food_group_names">
+        <!--<item>Baby Foods</item>-->
+        <item>Baked Products</item>
+        <item>Beef Products</item>
+        <item>Beverages</item>
+        <item>Breakfast Cereals</item>
+        <item>Cereal, Grains, and Pasta</item>
+        <item>Dairy and Egg Products</item>
+        <item>Fast Foods</item>
+        <item>Fats and Oils</item>
+        <item>Finfish and Shellfish Products</item>
+        <item>Fruits and Fruit Juices</item>
+        <item>Lamb, Veal, and Game Products</item>
+        <item>Legumes and Legume Products</item>
+        <item>Meals, Entrees, and Side Dishes</item>
+        <item>Nut and Seed Products</item>
+        <item>Pork Products</item>
+        <item>Poultry Products</item>
+        <item>Restaurant Foods</item>
+        <item>Sausages and Luncheon Meats</item>
+        <item>Snacks</item>
+        <item>Soups, Sauces, and Gravies</item>
+        <item>Spices and Herbs</item>
+        <item>Sweets</item>
+        <item>Vegetables and Vegetable Products</item>
+    </string-array>
+
+    <string-array name="food_group_ids">
+        <!--<item>0300</item>-->
+        <item>1800</item>
+        <item>1300</item>
+        <item>1400</item>
+        <item>0800</item>
+        <item>2000</item>
+        <item>0100</item>
+        <item>2100</item>
+        <item>0400</item>
+        <item>1500</item>
+        <item>0900</item>
+        <item>1700</item>
+        <item>1600</item>
+        <item>2200</item>
+        <item>1200</item>
+        <item>1000</item>
+        <item>0500</item>
+        <item>3600</item>
+        <item>0700</item>
+        <item>2500</item>
+        <item>0600</item>
+        <item>0200</item>
+        <item>1900</item>
+        <item>1100</item>
+    </string-array>
+
+    <!-- Array of staple food IDs, used to index to image file paths -->
+    <string-array name="staple_food_ids">
+        <item>21344</item>
+        <item>19095</item>
+        <item>11090</item>
+        <item>19335</item>
+        <item>18159</item>
+        <item>18249</item>
+        <item>19095</item>
+        <item>19093</item>
+        <item>01128</item>
+        <item>13445</item>
+        <item>16098</item>
+        <item>16043</item>
+        <item>01001</item>
+        <item>09037</item>
+        <item>01009</item>
+        <item>10860</item>
+        <item>21302</item>
+        <item>18069</item>
+        <item>36046</item>
+        <item>36602</item>
+        <item>08640</item>
+        <item>09003</item>
+    </string-array>
+
+
+    <string-array name="staple_food_images">
+        <item>burger.png</item>
+        <item>ice-cream.png</item>
+        <item>broccoli.png</item>
+        <item>sugar-cube.png</item>
+        <item>cookie.png</item>
+        <item>doughnut.png</item>
+        <item>ice-cream.png</item>
+        <item>chocolate.png</item>
+        <item>fried-egg.png</item>
+        <item>steak.png</item>
+        <item>peanut-butter-tbsp.png</item>
+        <item>one-cup.png</item>
+        <item>butter_tbsp.png</item>
+        <item>avocado.png</item>
+        <item>cheese.png</item>
+        <item>bacon.png</item>
+        <item>pizza.png</item>
+        <item>bread.png</item>
+        <item>pasta.png</item>
+        <item>rice.png</item>
+        <item>oatmeal.png</item>
+        <item>apple.png</item>
+    </string-array>
+</resources>

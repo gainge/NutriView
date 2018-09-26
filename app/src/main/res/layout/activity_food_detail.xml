@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- Need something for the favorite menu item -->
+    <!-- I don't know if we have to do anything with that here -->
+    <!-- But I'm p sure that we'll have to make a layout -->
+
+    <FrameLayout
+        android:id="@+id/food_detail_header_frame"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight"
+            >
+
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/list_item_font_size_small"
+
+            tools:text="Serving Size:"
+            />
+
+        <TextView
+            android:id="@+id/label_serving_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/list_item_font_size_small"
+
+            tools:text="ONE PORTION"
+            />
+
+        <!-- We'll need to add a selector here eventually! -->
+
+
+
+    </FrameLayout>
+
+
+
+
+
+    <!-- Now we do the scroll view? -->
+
+    <HorizontalScrollView
+        android:id="@+id/scrollview_nutrient_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_detail_header_frame"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:scrollbars="none"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/nutrient_button_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/button_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/button_calorie_title"
+                android:textColor="@color/white"
+                android:background="@drawable/calorie_button"
+                />
+
+            <Button
+                android:id="@+id/button_sugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/button_sugar_title"
+                android:textColor="@color/white"
+                android:background="@drawable/sugar_button"
+                />
+
+            <Button
+                android:id="@+id/button_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/button_fat_title"
+                android:textColor="@color/white"
+                android:background="@drawable/fat_button"
+                />
+
+            <Button
+                android:id="@+id/button_carbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/button_carbs_title"
+                android:textColor="@color/white"
+                android:background="@drawable/carbs_button"
+                />
+
+            <Button
+                android:id="@+id/button_protein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/button_protein_title"
+                android:textColor="@color/white"
+                android:background="@drawable/protein_button"
+                />
+
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/label_nutrient_measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollview_nutrient_button"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+
+        android:textSize="@dimen/header_large"
+        android:textColor="@color/black"
+
+        tools:text="THIS IS A TEST!"
+
+        />
+
+
+
+
+
+
+
+    <!-- Bottom Navigation -->
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/bottom_nav_color_state"
+        app:itemTextColor="@drawable/bottom_nav_color_state"
+        app:menu="@menu/bottom_nav_menu"
+
+        />
+
+</RelativeLayout>

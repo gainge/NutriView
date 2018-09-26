@@ -1,0 +1,22 @@
+# Android Studio Grossness
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.signing
+.externalNativeBuild
+/*/build/
+
+# Keeping our API key safe
+/assets/api.txt
+
+# OS Specific Stuff
+.DS_Store
+.DS_Store?
+
+
+

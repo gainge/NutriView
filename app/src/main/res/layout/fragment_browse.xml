@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.bignerdranch.android.nutriview.BrowseFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/inactiveSuperLight"
+        android:clickable="true">
+
+    </View>
+
+    <include layout="@layout/plain_title_toolbar"
+        android:id="@+id/toolbar_plain_title"/>
+    <include layout="@layout/title_backnav_toolbar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/browse_fragment_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_plain_title"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+    <!-- Old, deprecated and stupid stufff down there... User beware! -->
+    <!--<View-->
+        <!--android:id="@+id/view_darken_background"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/toolbar_plain_title"-->
+        <!--android:background="@color/inactiveDark"-->
+        <!--android:alpha="0.5">-->
+    <!--</View>-->
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progress_bar_browse"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--/>-->
+
+</RelativeLayout>

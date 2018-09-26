@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.bignerdranch.android.nutriview.SearchFragment">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/inactiveSuperLight"
+        android:clickable="true">
+
+    </View>
+
+    <include
+        android:id="@+id/search_toolbar_main"
+        layout="@layout/search_toolbar"
+        />
+
+    <!--TODO: uhh...  Find out if we need to do the toolbar stuff here or nah -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_results_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+    android:id="@+id/progress_bar_browse"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    />
+
+    <TextView
+        android:id="@+id/label_no_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/label_no_results"
+        android:textSize="@dimen/no_results_text_size"
+        />
+
+</FrameLayout>

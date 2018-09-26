@@ -1,0 +1,348 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.bignerdranch.android.nutriview.FoodDetailFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/inactiveSuperLight"
+        android:clickable="true">
+
+    </View>
+
+    <include layout="@layout/food_detail_toolbar"
+             android:id="@+id/toolbar_food_detail"/>
+
+    <FrameLayout
+        android:id="@+id/food_detail_header_frame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="4dp"
+        android:layout_below="@id/toolbar_food_detail"
+        >
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight"
+            android:focusable="false"
+            >
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/serving_info_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/serving_size_bar_text"
+                android:text="@string/label_serving_size"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+
+                tools:text="Serving Size:"
+                />
+
+            <TextView
+                android:id="@+id/label_serving_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+
+                android:textSize="@dimen/serving_size_bar_text"
+
+                tools:textSize="@dimen/serving_size_bar_text"
+                tools:text="ONE PORTION"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+
+                android:src="@drawable/ic_info_outline"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+
+        <!-- We'll need to add a spinner here eventually! -->
+        <!-- Or not, if we don't feel like it-->
+
+    </FrameLayout>
+
+
+
+
+
+    <!-- Now we do the scroll view? -->
+    <!-- Uncomment this for submission, looks better on mobile -->
+    <HorizontalScrollView
+        android:id="@+id/scrollview_nutrient_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_detail_header_frame"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:id="@+id/nutrient_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/food_detail_header_frame"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/button_calories"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+
+                android:minWidth="@dimen/button_min_width"
+
+                android:text="@string/button_calorie_title"
+                android:textColor="@color/white"
+                android:background="@color/calories"
+                />
+
+            <Button
+                android:id="@+id/button_sugar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+
+                android:minWidth="@dimen/button_min_width"
+
+                android:text="@string/button_sugar_title"
+                android:textColor="@color/white"
+                android:background="@color/sugar"
+                />
+
+            <Button
+                android:id="@+id/button_protein"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+
+                android:minWidth="@dimen/button_min_width"
+
+                android:text="@string/button_protein_title"
+                android:textColor="@color/white"
+                android:background="@color/protein"
+                />
+
+            <Button
+                android:id="@+id/button_fat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+
+                android:minWidth="@dimen/button_min_width"
+
+                android:text="@string/button_fat_title"
+                android:textColor="@color/white"
+                android:background="@color/fat"
+                />
+
+            <Button
+                android:id="@+id/button_carbs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+
+                android:minWidth="@dimen/button_min_width"
+
+                android:text="@string/button_carbs_title"
+                android:textColor="@color/white"
+                android:background="@color/carbs"
+                />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linear_container_nutrient_buttons"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<HorizontalScrollView-->
+            <!--android:id="@+id/scrollview_nutrient_button"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/food_detail_header_frame"-->
+            <!---->
+
+            <!--android:scrollbars="none"-->
+
+            <!--&gt;-->
+
+            <!---->
+
+        <!--</HorizontalScrollView>-->
+
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollview_nutrient_button"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/label_nutrient_measure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center_horizontal"
+
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+
+                android:textSize="@dimen/equivalence_label"
+                android:textColor="@color/black"
+
+                tools:text="THIS IS A TEST!"
+
+                />
+            <TextView
+                android:id="@+id/label_equals_sign"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="="
+                android:visibility="gone"
+
+                android:textSize="@dimen/list_item_font_size_small"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+
+                />
+
+            <TextView
+                android:id="@+id/label_equivalent_measure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+
+                android:textSize="@dimen/equivalence_label"
+                android:textColor="@color/black"
+                android:textAlignment="viewStart"
+                android:layout_gravity="start"
+                android:visibility="gone"
+
+
+                tools:text="THIS is another TEST!"
+
+                />
+        </LinearLayout>
+
+
+
+        <!-- Our mega awesome view pager thing! -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            >
+
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager_food_visual"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:background="@color/inactiveLight1"
+                >
+
+            </android.support.v4.view.ViewPager>
+
+            <ImageView
+                android:id="@+id/button_pager_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+
+                android:visibility="invisible"
+
+                android:src="@drawable/ic_next_dark_left"
+                />
+
+            <ImageView
+                android:id="@+id/button_pager_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+
+                android:src="@drawable/ic_next_dark_right"
+                />
+
+        </FrameLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabDots"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

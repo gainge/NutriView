@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.bignerdranch.android.nutriview.FoodVisualFragment">
+
+
+    <!-- We're just going to use a lame imageView for now -->
+    <GridView
+        android:id="@+id/gridview_food_visual"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        >
+
+
+
+
+
+    </GridView>
+
+</FrameLayout>

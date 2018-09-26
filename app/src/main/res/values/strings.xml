@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">NutriView</string>
+    <string name="search_hint">Search Foods</string>
+    <string name="bottomNav1">Browse</string>
+    <string name="bottomNav2">Search</string>
+    <string name="bottomNav3">Favorites</string>
+    <string name="button_calorie_title">Calories</string>
+    <string name="button_sugar_title">Sugar</string>
+    <string name="button_fat_title">Fat</string>
+    <string name="button_carbs_title">Carbs</string>
+    <string name="button_protein_title">Protein</string>
+    <string name="label_serving_size">Serving Size:</string>
+    <string name="favorite_fragment_title">Favorite Foods</string>
+
+    <string name="dialog_title">Customize Food</string>
+    <string name="dialog_label_field1">Food Name</string>
+    <string name="dialog_label_field2">Serving Size</string>
+    <string name="dialog_nutrient_section_header">Nutrient Values</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="dialog_button_cancel">Cancel</string>
+
+    <string name="dialog_serving_size_image_path">serving_sizes.png</string>
+    <string name="dialog_info_blurb_image_path">info_blurb.png</string>
+
+    <string name="label_no_results">No Search Results.</string>
+
+    <string name="nutrient_label_calories">Calories (kcal)</string>
+    <string name="nutrient_label_sugar">Sugar (g)</string>
+    <string name="nutrient_label_protein">Protein (g)</string>
+    <string name="nutrient_label_fat">Fat (g)</string>
+    <string name="nutrient_label_carbs">Carbs (g)</string>
+
+
+    <string name="nutrient_unit_calories">kCal</string>
+    <string name="nutrient_unit_sugar">grams</string>
+    <string name="nutrient_unit_protein">grams</string>
+    <string name="nutrient_unit_fat">grams</string>
+    <string name="nutrient_unit_carbs">grams</string>
+
+
+    <string name="favorites_path">favorites.json</string>
+    <string-array name="staple_paths">
+        <item>calories.json</item>
+        <item>sugar.json</item>
+        <item>protein.json</item>
+        <item>fat.json</item>
+        <item>carbs.json</item>
+    </string-array>
+
+    <string name="api_key_path">api.txt</string>
+
+    <string name="temp_gridview_src_path">DrMarioBlack.png</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

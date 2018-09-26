@@ -1,0 +1,38 @@
+[
+  {"name":"KELLOGG\u0027S FROSTED MINI-WHEATS, bite size","ID":"08319","foodGroupName":"","foodGroupID":"","weight":54.0,"measure":"21.0 biscuits","nutrients":
+    [
+      {"nutrient_id":"208","name":"Energy","unit":"kcal","value":189.0,"gm":350.0},
+      {"nutrient_id":"269","name":"Sugars, total","unit":"g","value":10.96,"gm":20.29},
+      {"nutrient_id":"203","name":"Protein","unit":"g","value":4.96,"gm":9.19},
+      {"nutrient_id":"204","name":"Total lipid (fat)","unit":"g","value":0.86,"gm":1.6},
+      {"nutrient_id":"205","name":"Carbohydrate, by difference","unit":"g","value":45.04,"gm":83.4}
+      ]
+    },
+    {"name":"Peanut M&M's","ID":"19140","foodGroupName":"","foodGroupID":"","weight":54.0,"measure":"1 singles bag","nutrients":
+      [
+        {"nutrient_id":"208","name":"Energy","unit":"kcal","value":278.0,"gm":515.0},
+        {"nutrient_id":"269","name":"Sugars, total","unit":"g","value":27.41,"gm":50.75},
+        {"nutrient_id":"203","name":"Protein","unit":"g","value":5.17,"gm":9.57},
+        {"nutrient_id":"204","name":"Total lipid (fat)","unit":"g","value":14.11,"gm":26.13},
+        {"nutrient_id":"205","name":"Carbohydrate, by difference","unit":"g","value":32.66,"gm":60.48}
+      ]
+    },
+    {"name":"PAPA JOHN\u0027S 14\" Pepperoni Pizza, Original Crust","ID":"21284","foodGroupName":"","foodGroupID":"","weight":123.0,"measure":"1.0 slice","nutrients":
+      [
+        {"nutrient_id":"208","name":"Energy","unit":"kcal","value":338.0,"gm":275.0},
+        {"nutrient_id":"269","name":"Sugars, total","unit":"g","value":5.95,"gm":4.84},
+        {"nutrient_id":"203","name":"Protein","unit":"g","value":14.72,"gm":11.97},
+        {"nutrient_id":"204","name":"Total lipid (fat)","unit":"g","value":14.59,"gm":11.86},
+        {"nutrient_id":"205","name":"Carbohydrate, by difference","unit":"g","value":36.95,"gm":30.04}
+      ]
+    },
+    {"name":"Restaurant, Chinese, orange chicken","ID":"36629","foodGroupName":"","foodGroupID":"","weight":648.0,"measure":"1.0 order","nutrients":
+      [
+        {"nutrient_id":"208","name":"Energy","unit":"kcal","value":169.0,"gm":262.0},
+        {"nutrient_id":"269","name":"Sugars, total","unit":"g","value":88.13,"gm":13.6},
+        {"nutrient_id":"203","name":"Protein","unit":"g","value":93.7,"gm":14.46},
+        {"nutrient_id":"204","name":"Total lipid (fat)","unit":"g","value":82.17,"gm":12.68},
+        {"nutrient_id":"205","name":"Carbohydrate, by difference","unit":"g","value":145.54,"gm":22.46}
+      ]
+    }
+]

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+
+            android:layout_marginLeft="20dp"
+
+            android:text="@string/dialog_label_field1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/list_item_font_size_medium"
+            />
+
+        <EditText
+            android:id="@+id/edit_text_food_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:inputType="text"
+
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+
+            android:layout_marginLeft="20dp"
+
+            android:text="@string/dialog_label_field2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/list_item_font_size_medium"
+            />
+
+        <EditText
+            android:id="@+id/edit_text_serving_size"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:inputType="text"
+
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom"
+
+            android:layout_marginLeft="20dp"
+
+            android:text="@string/dialog_nutrient_section_header"
+            android:textColor="@color/black"
+            android:textSize="@dimen/list_item_font_size_regular"
+            />
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+
+                android:layout_gravity="top"
+
+                android:layout_marginLeft="20dp"
+
+                android:text="@string/button_calorie_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/list_item_font_size_medium"
+                />
+
+            <EditText
+                android:id="@+id/edit_text_calorie_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:layout_marginRight="20dp"
+
+                android:inputType="numberDecimal"
+                android:maxLength="8"
+
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_gravity="top"
+
+                android:layout_marginLeft="20dp"
+
+                android:text="@string/button_sugar_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/list_item_font_size_medium"
+                />
+
+            <EditText
+                android:id="@+id/edit_text_sugar_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:inputType="number"
+                android:maxLength="7"
+
+                android:layout_marginRight="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_gravity="top"
+
+                android:layout_marginLeft="20dp"
+
+                android:text="@string/button_protein_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/list_item_font_size_medium"
+                />
+
+            <EditText
+                android:id="@+id/edit_text_protein_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+
+                android:layout_marginRight="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_gravity="top"
+
+                android:layout_marginLeft="20dp"
+
+                android:text="@string/button_fat_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/list_item_font_size_medium"
+                />
+
+            <EditText
+                android:id="@+id/edit_text_fat_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+
+                android:layout_marginRight="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_gravity="top"
+
+                android:layout_marginLeft="20dp"
+
+                android:text="@string/button_carbs_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/list_item_font_size_medium"
+                />
+
+            <EditText
+                android:id="@+id/edit_text_carbs_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+
+                android:layout_marginRight="20dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

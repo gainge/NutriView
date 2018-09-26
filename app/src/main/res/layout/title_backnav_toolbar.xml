@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_plain_backnav"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_alignParentTop="true"
+
+    android:background="?attr/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            >
+
+
+
+            <!-- The Backwards Navigation Button -->
+            <FrameLayout
+                android:id="@+id/btn_toolbar_navback"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_navback"
+                    android:src="@drawable/ic_navback"
+
+                    />
+
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <!-- Our title Element -->
+                <TextView
+                    android:id="@+id/label_toolbar_navback_title"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+
+
+                    android:textColor="@color/white"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+
+                    tools:text="Plain Title"
+                    />
+
+                <!-- Super sick search view of legend -->
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/searchview_toolbar_backnav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+
+                    style="@style/AppTheme.SearchView"
+                    >
+
+                </android.support.v7.widget.SearchView>
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+</android.support.v7.widget.Toolbar>

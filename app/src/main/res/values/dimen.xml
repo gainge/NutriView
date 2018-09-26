@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="foodgroup_image_size">50dp</dimen>
+    <dimen name="list_item_font_size_regular">25sp</dimen>
+    <dimen name="list_item_font_size_small">16sp</dimen>
+    <dimen name="list_item_font_size_medium">20sp</dimen>
+    <dimen name="header_large">35sp</dimen>
+    <dimen name="toolbar_title_small">20sp</dimen>
+    <dimen name="toolbar_title_very_small">15sp</dimen>
+    <dimen name="equivalence_label">25sp</dimen>
+    <dimen name="serving_size_bar_text">20sp</dimen>
+
+    <dimen name="too_small_ratio_notice_size">20sp</dimen>
+    <dimen name="no_results_text_size">20sp</dimen>
+
+    <dimen name="button_corner_radius">2dp</dimen>
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_min_width">90dp</dimen>
+
+    <integer name="title_max_lines">2</integer>
+</resources>

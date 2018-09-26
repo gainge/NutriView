@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_food_detail"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_alignParentTop="true"
+
+    android:background="?attr/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <!-- The Backwards Navigation Button -->
+        <!-- The Backwards Navigation Button -->
+        <FrameLayout
+            android:id="@+id/btn_toolbar_navback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_navback"
+                android:src="@drawable/ic_navback"
+
+                />
+
+        </FrameLayout>
+
+        <!-- Our title Element -->
+        <TextView
+            android:id="@+id/label_toolbar_favorite_title"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_weight="50"
+
+            android:maxLines="@integer/title_max_lines"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_title_small"
+
+            tools:text="Plain Title"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right|center"
+            android:layout_weight="1"
+            >
+
+
+            <!-- Edit is hidden by default -->
+            <!-- Maybe there's something we can do here with -->
+            <!--                clickability? -->
+
+            <FrameLayout
+                android:id="@+id/btn_toolbar_edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_edit"
+                    android:src="@drawable/ic_edit"
+
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/btn_toolbar_favorite"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/image_toolbar_favorite_star"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_favorite_white"
+                    android:src="@drawable/ic_favorite_white"
+
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.Toolbar>

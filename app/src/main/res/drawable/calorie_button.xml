@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="@dimen/button_corner_radius" />
+            <stroke android:width="1dip" android:color="@color/calories" />
+            <gradient android:angle="-90" android:startColor="@color/calories" android:endColor="@color/calories"  />
+        </shape>
+    </item>
+    <!--<item android:state_focused="true">-->
+        <!--<shape android:shape="rectangle"  >-->
+            <!--<corners android:radius="3dip" />-->
+            <!--<stroke android:width="1dip" android:color="#5e7974" />-->
+            <!--<solid android:color="#58857e"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item android:state_checked="false">-->
+        <!--<shape android:shape="rectangle"  >-->
+            <!--<corners android:radius="3dip" />-->
+            <!--<stroke android:width="1dip" android:color="@color/inactive" />-->
+            <!--<gradient android:angle="-90" android:startColor="@color/inactive" android:endColor="@color/inactiveDark"  />-->
+        <!--</shape>-->
+    <!--</item>-->
+    <item >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="@dimen/button_corner_radius" />
+            <stroke android:width="1dip" android:color="@color/calories" />
+            <gradient android:angle="-90" android:startColor="@color/calories" android:endColor="@color/calories" />
+        </shape>
+    </item>
+</selector>

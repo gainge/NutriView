@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#63AA60</color>
+    <color name="colorPrimaryDark">#3F6E3D</color>
+    <color name="colorAccent">#E8CE62</color>
+    <color name="colorPrimaryLight">#82bb7f</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="inactive">#949494</color>
+    <color name="inactiveLight1">#bebebe</color>
+    <color name="inactiveLight2">#c9c9c9</color>
+    <color name="inactiveSuperLight">#f8f8f8</color>
+    <color name="inactiveDark">#676767</color>
+    <color name="textPrimaryDark">#000000</color>
+
+    <color name="list_item_pressed">#c9c9c9</color>
+    <color name="list_item_focused">#c9c9c9</color>
+    <color name="list_item_default">#f8f8f8</color>
+
+    <!-- The colors for our key nutrients!! -->
+    <color name="calories">#F9A03F</color>
+    <color name="caloriesDark">#e09038</color>
+    <color name="sugar">#a0b2e3</color>
+    <color name="sugarDark">#90a0cc</color>
+
+    <color name="fat">#F5DD90</color>
+    <color name="fatDark">#f1cf61</color>
+    <!-- Maybe a better fat color? F5DD90-->
+    <color name="carbs">#704c07</color>
+    <color name="carbsDark">#593c05</color>
+    <color name="protein">#c35f52</color>
+    <color name="proteinDark">#af5549</color>
+
+</resources>

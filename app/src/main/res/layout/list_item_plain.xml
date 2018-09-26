@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/label_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/label_plain_food_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_gravity="center_vertical"
+
+            android:textSize="@dimen/list_item_font_size_medium"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/textPrimaryDark"
+
+            tools:text="Test"
+            />
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            >
+
+
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+
+
+                <!--android:background="@drawable/list_circle"-->
+                <!--/>-->
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:backgroundTint="@color/colorPrimaryDark"
+
+                android:background="@drawable/ic_next_dark_right"
+                />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/list_item_plain_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/label_container"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:background="@color/colorPrimaryLight"/>
+
+
+
+
+
+    <!-- Not so sure about the background stuff below -->
+
+
+</RelativeLayout>
