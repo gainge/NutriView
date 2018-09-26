@@ -29,6 +29,8 @@ import android.widget.NumberPicker;
 import android.widget.TextView;
 import android.widget.Toast;
 
+//import com.github.andreilisun.swipedismissdialog.SwipeDismissDialog;
+
 import com.github.andreilisun.swipedismissdialog.SwipeDismissDialog;
 
 import java.io.IOException;
@@ -57,10 +59,6 @@ import server.ServerProxy;
  * create an instance of this fragment.
  */
 public class FoodDetailFragment extends Fragment implements Observer {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-//    private static final String ARG_PARAM1 = "param1";
-//    private static final String ARG_PARAM2 = "param2";
 
     private static final String FOOD_ID = "com.bignerdranch.android.nutriview.food_id";
     private static final String TAG = "FOOD_DETAIL_FRAGMENT";
@@ -303,13 +301,6 @@ public class FoodDetailFragment extends Fragment implements Observer {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_food_detail, container, false);
 
-        if (mFood != null) {
-            Log.d(TAG, "mFood was not null!");
-//            Log.d(TAG, "Creating viewPager Adapter!");
-//            mPagerAdapter = new FoodVisualPagerAdapter(getChildFragmentManager(), startingIndex);
-        }
-
-
         // Initialize our Buttons and crap
         initButtons(view);
 
@@ -331,7 +322,6 @@ public class FoodDetailFragment extends Fragment implements Observer {
                 isFavorited = true;
             }
             new DummyTask().execute();
-
         }
 
 
@@ -550,9 +540,6 @@ public class FoodDetailFragment extends Fragment implements Observer {
         // Set up the fancy dots
         mTabLayout = (TabLayout) v.findViewById(R.id.tabDots);
         mTabLayout.setupWithViewPager(mFoodVisualPager, true);
-
-        // Set up everything for the view pager!
-//        updateViewPager();
 
         // Might want to override some methods here
         mFoodVisualPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {

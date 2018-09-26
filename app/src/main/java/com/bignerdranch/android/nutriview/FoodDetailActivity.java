@@ -34,11 +34,11 @@ public class FoodDetailActivity extends AppCompatActivity {
 
     // This is an intent for now
     // We might have to change some stuff in the future if it needs to be a fragment
-    // It could need to be a fragment if the bottom navigation stuff doesn't end up working out
+    // It could need to be a fragment if the bottom navigation  doesn't end up working out
     public static Intent newIntent(Context packageContext, String foodID) {
         Intent intent = new Intent(packageContext, FoodDetailActivity.class);
+        // Pack up some data
         intent.putExtra(FOOD_ID, foodID); // I guess another option here is parcelables?
-        // Pack up some data?
         return intent;
     }
 
@@ -56,8 +56,6 @@ public class FoodDetailActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(foodID);
 
         initButtons();
-
-
     }
 
     private void initButtons() {

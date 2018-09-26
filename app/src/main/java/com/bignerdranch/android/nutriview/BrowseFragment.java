@@ -161,33 +161,10 @@ public class BrowseFragment extends Fragment {
 
         private void taskStarted() {
             isLoading = true;
-
-            // Take care of some UI stuff
-//            if (mProgressBar != null) {
-//                mProgressBar.setVisibility(View.VISIBLE);
-//            }
-//            if (mShadingView != null) {
-//                mShadingView.setVisibility(View.VISIBLE);
-//            }
-//            if (mBrowseRecyclerView != null) {
-//                mBrowseRecyclerView.setVisibility(View.INVISIBLE);
-//                mBrowseRecyclerView.setEnabled(false);
-//            }
         }
 
         private void taskEnded() {
             isLoading = false;
-
-//            if (mProgressBar != null) {
-//                mProgressBar.setVisibility(View.INVISIBLE);
-//            }
-//            if (mShadingView != null) {
-//                mShadingView.setVisibility(View.INVISIBLE);
-//            }
-//            if (mBrowseRecyclerView != null) {
-//                mBrowseRecyclerView.setVisibility(View.VISIBLE);
-//                mBrowseRecyclerView.setEnabled(true);
-//            }
         }
     }
 
@@ -213,10 +190,6 @@ public class BrowseFragment extends Fragment {
 
     private String currentFoodGroupID;
 
-
-//    private ProgressBar mProgressBar;
-//    private View mShadingView;
-
     private OnFragmentInteractionListener mListener;
 
     public BrowseFragment() {
@@ -233,10 +206,8 @@ public class BrowseFragment extends Fragment {
     // TODO: Rename and change types and number of parameters
     public static BrowseFragment newInstance() {
         BrowseFragment fragment = new BrowseFragment();
-//        Bundle args = new Bundle();
-//        args.putString(ARG_PARAM1, param1);
-//        args.putString(ARG_PARAM2, param2);
-//        fragment.setArguments(args);
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
         return fragment;
     }
 
@@ -253,10 +224,6 @@ public class BrowseFragment extends Fragment {
         Log.d(TAG, "Loaded Arrays!");
         Log.d(TAG, "Sizes: " + mFoodGroupIconFiles.length + " " + mFoodGroupNames.length + " " + mFoodGroupIDs.length);
 
-        if (getArguments() != null) {
-//            mParam1 = getArguments().getString(ARG_PARAM1);
-//            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
@@ -275,20 +242,6 @@ public class BrowseFragment extends Fragment {
 
         return view;
     }
-
-//    private void initProgressBar(View v) {
-//        mProgressBar = (ProgressBar) v.findViewById(R.id.progress_bar_browse);
-//
-//        if (mProgressBar != null) {
-//            mProgressBar.setVisibility(View.INVISIBLE);
-//        }
-//
-//        mShadingView = v.findViewById(R.id.view_darken_background);
-//        if (mShadingView != null) {
-//            mShadingView.setVisibility(View.INVISIBLE);
-//        }
-//    }
-
 
     private void initSearchView() {
         if (mBacknavToolbar == null) return;
@@ -324,7 +277,6 @@ public class BrowseFragment extends Fragment {
                     // I could use this to make sure the bottom nav shows up again tho
                     // Actually, I don't even need to hide it in the first place, come to think of it
                     mSearchView.clearFocus();
-//                    mSearchView.setIconified(true);
                     return true;
                 }
             });
@@ -344,11 +296,11 @@ public class BrowseFragment extends Fragment {
                     }
 
                     if (hasFocus) {
-                        // Hide the title?
+                        // Hide the title
                         title.setVisibility(View.INVISIBLE);
                     }
                     else {
-                        // Show the title?
+                        // Show the title
                         title.setVisibility(View.VISIBLE);
                     }
                 }
@@ -461,7 +413,7 @@ public class BrowseFragment extends Fragment {
             disableToolbar(mPlainToolbar);          // Disable the current
             enableToolbar(mBacknavToolbar);         // Enable the other
             mMainToolbar = mBacknavToolbar;         // Swap the current
-            mBacknavButton.setEnabled(true);         // enable the backnav
+            mBacknavButton.setEnabled(true);        // enable the backnav
         }
         else {
             disableToolbar(mBacknavToolbar);
@@ -502,9 +454,6 @@ public class BrowseFragment extends Fragment {
         mBrowseAdapter = new BrowseAdapter();
 
         mBrowseRecyclerView.setAdapter(mBrowseAdapter);
-
-        // Should probably do the adapter stuff here too, methinks
-        // Let's try to init the data first?
     }
 
 
@@ -636,9 +585,7 @@ public class BrowseFragment extends Fragment {
 
         @Override
         public void onClick(View v) {
-            // This is ultra stubbed out for now
-//            Toast.makeText(getActivity().getBaseContext(), "I can't help you browse a certain food yet!", Toast.LENGTH_SHORT).show();
-            // Then do the same stuff as search
+            // Do the same stuff as search
             if (mFood != null) {
                 if (mSearchView != null) {
                     mSearchView.clearFocus();

@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity implements Observer,
         FavoritesFragment.OnFragmentInteractionListener,
         EditFoodDialog.OnFragmentInteractionListener {
 
+
     /* CONSTANTS */
     private static final String TAG = "MAIN_ACTIVITY";
-
 
     /* DATA MEMBERS */
     Fragment mSearchFragment;
@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements Observer,
     Fragment mCurrentFragment;
 
     FoodDetailFragment mCurrentFoodDetail;
-
 
     BottomNavigationView mBottomNavigationView;
 
@@ -61,10 +60,10 @@ public class MainActivity extends AppCompatActivity implements Observer,
         ClientModelRoot.SINGLETON.loadFavoriteFoods(getBaseContext());
         Values.SINGLETON.loadAPIKey(getBaseContext());
 
-        // I want to disable the animations thoooo....
+        // I want to disable the animations tho sooo....
         ActionBar ab = getSupportActionBar();
         if (ab != null) {
-            Log.d(TAG, "Attempting to enable custom toolbar!");
+            Log.d(TAG, "Enabling custom toolbar!");
             // Enable overriding of the default actionbar
             ab.setDisplayShowCustomEnabled(true);
         }
@@ -74,8 +73,7 @@ public class MainActivity extends AppCompatActivity implements Observer,
         ClientModelRoot.SINGLETON.addObserver(this);
 
 
-        // Lets try to do some fragment stuff!
-
+        // Lets do some fragment stuff!
         FragmentManager fm = getSupportFragmentManager();
         mBrowseFragment = BrowseFragment.newInstance();
 
@@ -88,7 +86,6 @@ public class MainActivity extends AppCompatActivity implements Observer,
         mCurrentFragment = mBrowseFragment;
 
         initBottomNav();
-
     }
 
     @Override
@@ -128,9 +125,10 @@ public class MainActivity extends AppCompatActivity implements Observer,
     }
 
     // This callback is called only when there is a saved instance previously saved using
-// onSaveInstanceState(). We restore some state in onCreate() while we can optionally restore
-// other state here, possibly usable after onStart() has completed.
-// The savedInstanceState Bundle is same as the one used in onCreate().
+    // onSaveInstanceState(). We restore some state in onCreate() while we can optionally restore
+    // other state here, possibly usable after onStart() has completed.
+    // The savedInstanceState Bundle is same as the one used in onCreate().
+    // TODO: acutally make these guys work correctly with saved instance states
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         Log.d(TAG, "onRestoreInstanceState!");
@@ -141,8 +139,6 @@ public class MainActivity extends AppCompatActivity implements Observer,
     @Override
     public void onSaveInstanceState(Bundle outState) {
         Log.d(TAG, "onSaveInstanceState!");
-//        outState.putString(GAME_STATE_KEY, mGameState);
-//        outState.putString(TEXT_VIEW_KEY, mTextView.getText());
 
         Log.d(TAG, "We're not calling the super method!!");
         // call superclass to save any view hierarchy
@@ -165,8 +161,7 @@ public class MainActivity extends AppCompatActivity implements Observer,
                         popFragmentBackStack();
                         switch(item.getItemId()) {
                             case R.id.action_browse:
-//                                Toast.makeText(getBaseContext(), "Browse!", Toast.LENGTH_SHORT).show();
-                                // Aww crap, fragment stuff
+                                // Aww snap, fragment stuff
                                 if (mBrowseFragment == null) {
                                     Log.d(TAG, "Created new BrowseFragment Instance!");
                                     mBrowseFragment = BrowseFragment.newInstance();
@@ -259,18 +254,6 @@ public class MainActivity extends AppCompatActivity implements Observer,
     public void onBackPressed() {
         // Be a good boy
         super.onBackPressed();
-
-//        popFragmentBackStack();
-//        if (mSearchFragment != null) {
-//            removeMainFragment(mSearchFragment);
-//            mSearchFragment = null;
-//        }
-//        if (mFavoritesFragment != null) {
-//            removeMainFragment(mFavoritesFragment);
-//            mFavoritesFragment = null;
-//        }
-//
-//        mCurrentFragment = mBrowseFragment;
     }
 
 
@@ -291,10 +274,6 @@ public class MainActivity extends AppCompatActivity implements Observer,
 
     // This method is called when the up button is pressed on a food detail fragment
     // We'll remove it using the fragment manager?
-    // But where are we really even removing it from?
-    // Hm....
-    // And what was that stuff about the back stack?
-    // Do we have to deal with that at all, really?
     public void onFoodDetailUpPress(Fragment fragment) {
         if (mCurrentFragment instanceof FavoritesFragment) {
             ((FavoritesFragment)mFavoritesFragment).favoritesChanged();
@@ -317,7 +296,7 @@ public class MainActivity extends AppCompatActivity implements Observer,
     }
 
     public void onFoodDetailEditPress(Food food) {
-        // Display the dialog?
+        // Display the dialog
         EditFoodDialog dialog = EditFoodDialog.newInstance(food);
 
         dialog.show(getSupportFragmentManager(), "EditFoodDialog");
@@ -338,12 +317,12 @@ public class MainActivity extends AppCompatActivity implements Observer,
             mCurrentFoodDetail.updateViewPager();       // This might be really bad
         }
 
-
     }
 
 
 
     public void update(Observable o, Object arg) {
+        // Check argument
         if (arg instanceof UpdateType) {
             UpdateType updateType = (UpdateType) arg;
             if (updateType != UpdateType.SelectedFoodChanged) return;
@@ -351,7 +330,7 @@ public class MainActivity extends AppCompatActivity implements Observer,
         // Otherwise we're good to go
 
 
-        // So I Guess this on is called whenever the notify observers is called in the client model root?
+        // So this on is called whenever the notify observers is called in the client model root
         Log.d(TAG, "Observation made, update() executing");
 
         if (ClientModelRoot.SINGLETON.getSelectedFood() != null) {
@@ -361,7 +340,6 @@ public class MainActivity extends AppCompatActivity implements Observer,
             if (ClientModelRoot.SINGLETON.containsFavorite(foodID)) {
                 // Init from a blank foodID, and set the food manually
                 foodDetailFragment = FoodDetailFragment.newInstance(ClientModelRoot.SINGLETON.getFavoriteWithID(foodID));
-//                ((FoodDetailFragment)foodDetailFragment).setFood(ClientModelRoot.SINGLETON.getFavoriteWithID(foodID));
             }
             else {
                 // Initialize from a foodID
@@ -384,9 +362,4 @@ public class MainActivity extends AppCompatActivity implements Observer,
         }
     }
 
-
-    // PLEASE IMPLEMENT:
-    //      OnResume, OnDestroy, etc... All that crap!
-    //      Right now like, we have a bunch of funky stuff left over?
-    //      I really don't want to have to deal with all that
 }

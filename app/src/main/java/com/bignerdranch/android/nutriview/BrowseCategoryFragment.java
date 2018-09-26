@@ -16,11 +16,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class BrowseCategoryFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
     private static final String FOOD_GROUP = "com.bignerdranch.android.nutriview.browsecategoryfragment.food_group";
 
-
-    // TODO: Rename and change types of parameters
     private String mFoodGroupID;
 
     private OnFragmentInteractionListener mListener;
@@ -29,19 +26,9 @@ public class BrowseCategoryFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-
-     * @return A new instance of fragment BrowseCategoryFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static BrowseCategoryFragment newInstance() {
         BrowseCategoryFragment fragment = new BrowseCategoryFragment();
         Bundle args = new Bundle();
-//        args.putString(ARG_PARAM1, param1);
-//        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -49,10 +36,6 @@ public class BrowseCategoryFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-//            mParam1 = getArguments().getString(ARG_PARAM1);
-//            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
@@ -61,13 +44,6 @@ public class BrowseCategoryFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_browse_category, container, false);
     }
-
-    // TODO: Rename method, update argument and hook method into UI event
-//    public void onButtonPressed(Uri uri) {
-//        if (mListener != null) {
-//            mListener.onFragmentInteraction(uri);
-//        }
-//    }
 
     @Override
     public void onAttach(Context context) {
