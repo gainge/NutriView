@@ -135,10 +135,6 @@ public class FoodVisualFragment extends Fragment {
 
         mImageDimensions = mColumnWidth;
 
-        // Compute the vertical spacing
-//        double maxFit = getParentFragment().getView().getHeight() / mImageDimensions;
-//        double remainder = getParentFragment().getView().getHeight() / maxFit * mImageDimensions;
-//        mVerticalSpacing = (int) (remainder / (mNumColumns - 1));
     }
 
     @Override
@@ -153,11 +149,6 @@ public class FoodVisualFragment extends Fragment {
         if (container.getWidth() > container.getHeight()) {
             mNumColumns = (int) Math.sqrt(mRatio) + 1;
             mColumnWidth = (int) (container.getHeight() / (mNumColumns * PAD_FACTOR));
-
-            // Handle the case of very few images
-//            if (mRatio <= 2) {
-//                mNumColumns = 1;
-//            }
 
             mImageDimensions = mColumnWidth;
         }
@@ -194,19 +185,6 @@ public class FoodVisualFragment extends Fragment {
         Log.d(TAG, "Initializing GridView!");
         // Initialize the gridview member
         mGridView = (GridView) v.findViewById(R.id.gridview_food_visual);
-
-        // handle the case where we have relatively few items
-//        if (mNumColumns == 1) {
-//            int pad = mColumnWidth / 2;
-//            if ((int) mRatio == 1) {
-//                mGridView.setPadding(pad, pad, pad, pad);   // Pad all edges
-//            }
-//            else if ((int) mRatio == 2) {
-//                mGridView.setPadding(pad, 0, pad, 0);       // Pad only sides
-//            }
-//        }
-
-
 
         mGridView.setNumColumns(mNumColumns);
         mGridView.setColumnWidth(mColumnWidth);
@@ -352,7 +330,6 @@ public class FoodVisualFragment extends Fragment {
                 View overlap = new View(getActivity().getBaseContext());
                 overlap.setLayoutParams(params);
                 overlap.setBackgroundColor(getActivity().getResources().getColor(R.color.inactiveSuperLight));
-//                overlap.setPadding(mImageDimensions / 2, 0, 0, 0);
 
                 relativeLayout.addView(image);
                 relativeLayout.addView(overlap);
@@ -391,7 +368,6 @@ public class FoodVisualFragment extends Fragment {
                 // Not really sure what anything below does...
                 imageView.setLayoutParams(new GridView.LayoutParams(mImageDimensions, mImageDimensions));
                 imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-//                imageView.setPadding(8, 8, 8, 8);
             } else {
                 imageView = (ImageView) convertView;
             }

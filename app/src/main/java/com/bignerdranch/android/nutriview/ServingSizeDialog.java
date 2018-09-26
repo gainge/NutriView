@@ -86,7 +86,6 @@ public class ServingSizeDialog extends DialogFragment {
         // Disable them buttons
         if (d != null) {
             ((Button)d.getButton(Dialog.BUTTON_POSITIVE)).setEnabled(false);
-//            ((Button)d.getButton(Dialog.BUTTON_NEGATIVE)).setEnabled(false);
             ((Button)d.getButton(Dialog.BUTTON_NEGATIVE)).setText("Dismiss");
 
         }

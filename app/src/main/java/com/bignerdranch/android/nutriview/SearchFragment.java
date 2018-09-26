@@ -50,16 +50,8 @@ import server.ServerProxy;
  * create an instance of this fragment.
  */
 public class SearchFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
     private static final String TAG = "SEARCH_FRAGMENT";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
     private boolean requeryAttempted;
 
     EditText mSearchField;
@@ -140,23 +132,8 @@ public class SearchFragment extends Fragment {
                 return;
             }
 
-//            if (o instanceof String) {
-//                // This is when the results were empty!
-//                if (requeryAttempted && emptyResults) {
-//                    if (mNoResults != null) {
-//                        mNoResults.setVisibility(View.VISIBLE);
-//                    }
-//
-//                    emptyResults = false;
-//
-//                    return;
-//                }
-//            }
 
             SearchResult searchResult = (SearchResult) o;
-
-//            Log.d(TAG, "Printing Search Result");
-//            Log.d(TAG, searchResult.toString());
 
             // Then do some stuff with the search result, I'm assuming
             // Probably will have to notify our class to do a fragment thing
@@ -239,8 +216,6 @@ public class SearchFragment extends Fragment {
     public static SearchFragment newInstance() {
         SearchFragment fragment = new SearchFragment();
         Bundle args = new Bundle();
-//        args.putString(ARG_PARAM1, param1);
-//        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -251,10 +226,6 @@ public class SearchFragment extends Fragment {
         // Have to do something here with an options menu?
         // Or like, specifying the custom toolbar?
         // Hmmmm... I'll have to read up on this
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
@@ -262,8 +233,6 @@ public class SearchFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_search, container, false);
-
-//        initBottomNav(view);
 
         initRecyclerView(view);
 
@@ -288,13 +257,6 @@ public class SearchFragment extends Fragment {
 
 
         return view;
-    }
-
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-//        if (mListener != null) {
-//            mListener.onFragmentInteraction(uri);
-//        }
     }
 
     @Override
@@ -411,9 +373,6 @@ public class SearchFragment extends Fragment {
                 if (hasFocus) {
                     mListener.onSearchEntered();
                 }
-                else {
-//                    mListener.onSearchExecuted();
-                }
             }
         });
 
@@ -459,12 +418,6 @@ public class SearchFragment extends Fragment {
         if (mSearchToolbar != null) {
             ((AppCompatActivity)getActivity()).setSupportActionBar(mSearchToolbar);
         }
-
-//        final ActionBar ab = getSupportActionBar();
-//        ab.setDisplayShowHomeEnabled(false);    // Show or hide the default home button
-//        ab.setDisplayHomeAsUpEnabled(false);
-//        ab.setDisplayShowCustomEnabled(true); // enable overriding the default toolbar layout
-//        ab.setDisplayShowTitleEnabled(false); // disable the default title element
     }
 
 
@@ -500,10 +453,7 @@ public class SearchFragment extends Fragment {
             // We need to start a new activity, eventually
             // But for now we can just diplay a toast
             if (mFood != null) {
-//                Toast.makeText(getBaseContext(), mFood.getName(), Toast.LENGTH_SHORT).show();
                 ClientModelRoot.SINGLETON.setSelectedFood(mFood);   // Hopefully this will notify stuff!
-//                Intent intent = FoodDetailActivity.newIntent(getBaseContext(), mFood.getID());
-//                startActivity(intent);
             }
             else {
                 Toast.makeText(getActivity().getBaseContext(), "This is no bueno!!", Toast.LENGTH_SHORT).show();
@@ -553,15 +503,8 @@ public class SearchFragment extends Fragment {
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-//        void onFragmentInteraction(Uri uri);
+        void onSearchEntered();
 
-        // So this is where we can add our methods with things that we want to send back to the activity?
-        // Hmmm... Cool
-        // Let's leave this blank for now, and make the main activity implement it
-        // And maybe mess around with it later
-        public void onSearchEntered();
-
-        public void onSearchExecuted();
+        void onSearchExecuted();
     }
 }
