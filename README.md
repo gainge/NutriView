@@ -3,7 +3,10 @@ An android app to help people visualize nutritional information in foods.  It us
 
 # Screenshots
 
-<img src="https://i.imgur.com/S7nIlyv.png" width="100">
-<img src="https://i.imgur.com/S7nIlyv.png" width="100">
-<img src="https://i.imgur.com/S7nIlyv.png" width="100">
-<img src="https://i.imgur.com/S7nIlyv.png" width="100">
+<div style="display: inline-block">
+  <img src="https://i.imgur.com/S7nIlyv.png" width="100">
+  <img src="https://i.imgur.com/S7nIlyv.png" width="100">
+  <img src="https://i.imgur.com/S7nIlyv.png" width="100">
+  <img src="https://i.imgur.com/S7nIlyv.png" width="100">
+</div>
+
